@@ -2,7 +2,7 @@
   "name": "mrz",
   "version": "0.0.7",
   "description": "Create and parse MRZ (Machine Readable Zone) in TD1 and TD3 format",
-  "main": "./src/index.js",
+  "main": "./dist/mrz.min.js",
   "files": [
     "dist"
   ],
