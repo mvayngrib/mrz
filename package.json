@@ -4,8 +4,7 @@
   "description": "Create and parse MRZ (Machine Readable Zone) in TD1 and TD3 format",
   "main": "./src/index.js",
   "files": [
-    "runkit.js",
-    "src"
+    "dist"
   ],
   "scripts": {
     "eslint": "eslint src test",
@@ -15,7 +14,7 @@
     "test-travis": "istanbul cover node_modules/.bin/_mocha --report lcovonly -- --require should --reporter dot --recursive",
     "test-mocha": "mocha --require should --reporter mocha-better-spec-reporter",
     "build": "npm run buildCountries && cheminfo build",
-    "prepublish": "npm run buildCountries",
+    "prepublish": "npm run build",
     "buildCountries": "node builder/createCountriesJs.js"
   },
   "repository": {
